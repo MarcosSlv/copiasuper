@@ -17,19 +17,19 @@ const productList: Product[] = [
     id: 1,
     name: 'Bananas',
     price: 2.59,
-    image: '../../src/assets/images/bananas.jpg'
+    image: '../../src/pages/Ofertas/imgs/bananas.jpg'
   },
   {
     id: 2,
     name: 'Chocolate',
     price: 5.49,
-    image: '../../src/assets/images/barrachoc.jpg'
+    image: '../../src/pages/Ofertas/imgs/barrachoc.jpg'
   },
   {
     id: 3,
     name: 'Milho',
     price: 1.99,
-    image: '../../src/assets/images/milho.jpg'
+    image: '../../src/pages/Ofertas/imgs/milho.jpg'
   }
   ]
   const [currentProductIndex, setCurrentProductIndex] = useState(0);

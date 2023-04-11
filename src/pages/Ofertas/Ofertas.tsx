@@ -8,6 +8,9 @@ interface Product {
   image: string;
 }
 
+const imgBanana = '../../src/pages/Ofertas/imgs/bananas.jpg';
+const imgChoc = '../../src/pages/Ofertas/imgs/barrachoc.jpg';
+const imgMilho = '../../src/pages/Ofertas/imgs/milho.jpg';
 
 
 export const Ofertas= () => {
@@ -17,19 +20,19 @@ const productList: Product[] = [
     id: 1,
     name: 'Bananas',
     price: 2.59,
-    image: '../../src/pages/Ofertas/imgs/bananas.jpg'
+    image: imgBanana
   },
   {
     id: 2,
     name: 'Chocolate',
     price: 5.49,
-    image: '../../src/pages/Ofertas/imgs/barrachoc.jpg'
+    image: imgChoc
   },
   {
     id: 3,
     name: 'Milho',
     price: 1.99,
-    image: '../../src/pages/Ofertas/imgs/milho.jpg'
+    image: imgMilho
   }
   ]
   const [currentProductIndex, setCurrentProductIndex] = useState(0);

@@ -1,16 +1,19 @@
 import { useState } from 'react';
 
 
-interface Product {
+import imgBanana from './imgs/bananas.jpg';
+import imgChoc from './imgs/barrachoc.jpg';
+import imgMilho from './imgs/milho.jpg';
+
+type Product = {
   id: number;
   name: string;
   price: number;
-  image: string;
+  image: {
+    src: string
+  }
 }
 
-const imgBanana = '../../src/pages/Ofertas/imgs/bananas.jpg';
-const imgChoc = '../../src/pages/Ofertas/imgs/barrachoc.jpg';
-const imgMilho = '../../src/pages/Ofertas/imgs/milho.jpg';
 
 
 export const Ofertas= () => {
@@ -20,19 +23,19 @@ const productList: Product[] = [
     id: 1,
     name: 'Bananas',
     price: 2.59,
-    image: imgBanana
+    image: {src: imgBanana}
   },
   {
     id: 2,
     name: 'Chocolate',
     price: 5.49,
-    image: imgChoc
+    image: {src: imgChoc}
   },
   {
     id: 3,
     name: 'Milho',
     price: 1.99,
-    image: imgMilho
+    image: {src: imgMilho}
   }
   ]
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
@@ -52,7 +55,7 @@ const productList: Product[] = [
       
       {currentProduct && (
         <div key={currentProduct.id} className='flex-col justify-center'>
-          <img src={currentProduct.image} alt={currentProduct.name} className='m-auto h-52 w-80 rounded-md'/>
+          <img src={currentProduct.image.src} alt={currentProduct.name} className='m-auto h-52 w-80 rounded-md'/>
           <h1 className='text-center font-semibold pt-2'>{currentProduct.name}</h1>
           <p className='text-center font-semibold'>R$: {currentProduct.price}</p>
         </div>

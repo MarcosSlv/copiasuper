@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 
 // pages
 import { Inicio } from "./pages/Inicio"
@@ -18,17 +18,15 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/ofertas" element={<Ofertas />} />
-          <Route path="/dicas" element={<Dicas />} />
-          <Route path="/dicas/adega" element={<Adega />} />
-          <Route path="/dicas/churrasco" element={<Churrasco />} />
-          <Route path="/contato" element={<Sobre />} />
-        </Routes>
-      </BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/ofertas" element={<Ofertas />} />
+        <Route path="/dicas" element={<Dicas />} />
+        <Route path="/dicas/adega" element={<Adega />} />
+        <Route path="/dicas/churrasco" element={<Churrasco />} />
+        <Route path="/contato" element={<Sobre />} />
+      </Routes>
     </div>
   )
 }

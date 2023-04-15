@@ -12,7 +12,7 @@ import { Churrasco } from "./pages/Dicas/Churrasco"
 
 
 // components
-import Header from "./components/Header"
+import { Header } from './components/Header'
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/dicas/churrasco" element={<Churrasco />} />
           <Route path="/contato" element={<Sobre />} />
         </Routes>
-      </BrowserRouter>  
+      </BrowserRouter>
     </div>
   )
 }

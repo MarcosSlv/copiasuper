@@ -1,19 +1,19 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 
 // pages
-import { Inicio } from "./pages/Inicio"
-import { Ofertas } from "./pages/Ofertas"
-import { Sobre } from "./pages/Sobre"
-import { Dicas } from "./pages/Dicas"
-import { Problemas } from './pages/Problemas'
+import { Inicio } from "./pages/Inicio";
+import { Ofertas } from "./pages/Ofertas";
+import { Sobre } from "./pages/Sobre";
+import { Dicas } from "./pages/Dicas";
+import { Problemas } from './pages/Problemas';
 
-// subpages 
-import { Adega } from "./pages/Dicas/Adega"
-import { Churrasco } from "./pages/Dicas/Churrasco"
+// subpages
+import { Adega } from "./pages/Dicas/Adega";
+import { Churrasco } from "./pages/Dicas/Churrasco";
 
 
 // components
-import { Header } from './components/Header'
+import { Header } from './components/Header';
 
 function App() {
 
@@ -31,6 +31,6 @@ function App() {
       </Routes>
     </div>
   )
-}
+};
 
-export default App
+export default App;

@@ -5,6 +5,7 @@ import { Inicio } from "./pages/Inicio"
 import { Ofertas } from "./pages/Ofertas"
 import { Sobre } from "./pages/Sobre"
 import { Dicas } from "./pages/Dicas"
+import { Problemas } from './pages/Problemas'
 
 // subpages 
 import { Adega } from "./pages/Dicas/Adega"
@@ -26,6 +27,7 @@ function App() {
         <Route path="/dicas/adega" element={<Adega />} />
         <Route path="/dicas/churrasco" element={<Churrasco />} />
         <Route path="/contato" element={<Sobre />} />
+        <Route path="*" element={<Problemas />} />
       </Routes>
     </div>
   )

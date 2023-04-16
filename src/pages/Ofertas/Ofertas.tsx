@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { producList } from '../../data/productList';
+import { BsArrowLeftCircleFill } from 'react-icons/bs';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export const Ofertas = () => {
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
@@ -25,8 +27,8 @@ export const Ofertas = () => {
         </div>
       )}
       <div className='flex justify-between justify-items-center p-2'>
-        <button onClick={previousProduct} className='flex justify-center rounded w-10 h-7 bg-gray-700 ease-in duration-300 hover:bg-white hover:text-red-800 font-semibold text-xl'>-</button>
-        <button onClick={nextProduct} className='flex justify-center rounded w-10 h-7 bg-gray-700 ease-in duration-300 hover:bg-white hover:text-red-800 font-semibold text-xl'>+</button>
+        <button onClick={previousProduct} className='flex justify-center pt-1 rounded w-10 h-7 bg-gray-700 ease-in duration-300 hover:bg-white hover:text-red-800 font-semibold text-xl'><BsArrowLeftCircleFill /></button>
+        <button onClick={nextProduct} className='flex justify-center pt-1 rounded w-10 h-7 bg-gray-700 ease-in duration-300 hover:bg-white hover:text-red-800 font-semibold text-xl'><BsFillArrowRightCircleFill /></button>
       </div>
 
 
